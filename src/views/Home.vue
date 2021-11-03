@@ -47,17 +47,51 @@
   </section>
   <section>
     <h2>All Products</h2>
-    <IconLink linkText="Cash Advances" imgPath="@/images/icon-credit.svg" />
-    <IconLink />
-    <IconLink />
-    <IconLink />
-    <IconLink />
-    <IconLink />
-    <IconLink />
-    <IconLink />
-    <IconLink />
-    <IconLink />
-    <IconLink />
+    <IconLink
+      link="/about"
+      linkText="Cash Advances"
+      imgPath="images/icon-advances.svg"
+    />
+    <IconLink
+      link="/about"
+      linkText="Credit Hub"
+      imgPath="images/icon-meter.svg"
+    />
+    <IconLink
+      link="/about"
+      linkText="Emergency Loans"
+      imgPath="images/icon-shield.svg"
+    />
+    <IconLink
+      link="/about"
+      linkText="Installment Loans"
+      imgPath="images/icon-installment.svg"
+    />
+    <IconLink
+      link="About"
+      linkText="Lines of Credit"
+      imgPath="images/icon-credit-line.svg"
+    />
+    <IconLink
+      link="/about"
+      linkText="Micro Loans"
+      imgPath="images/icon-micro-loan.svg"
+    />
+    <IconLink
+      link="/about"
+      linkText="Payday Loans"
+      imgPath="images/icon-wallet.svg"
+    />
+    <IconLink
+      link="/about"
+      linkText="Purpose Progress"
+      imgPath="images/icon-pp.svg"
+    />
+    <IconLink
+      link="/about"
+      linkText="Title Loans"
+      imgPath="images/icon-hand.svg"
+    />
   </section>
   <section>
     <h2>chat bot</h2>
