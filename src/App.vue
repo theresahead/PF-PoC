@@ -1,30 +1,40 @@
 <template>
-  <div id="nav">
+  <Card>
+    <Header />
+  </Card>
+  <!-- <div id="nav">
     <router-link to="/">Home</router-link> |
     <router-link to="/about">About</router-link>
-  </div>
+  </div> -->
   <router-view />
 </template>
 
+<script>
+import Header from "@/components/Header.vue";
+import Card from "@/components/Card.vue";
+export default {
+  // name: "Home",
+  components: {
+    Header,
+    Card,
+  },
+};
+</script>
+
 <style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+// todo:
+body {
+  background-color: #f7f7f7;
+  padding: 1rem;
+  font-family: "Lato", sans-serif;
 }
-
-#nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
+.greeting {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.title,
+h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 </style>
