@@ -1,18 +1,25 @@
 <template>
-  <div class="card">
+  <div :class="[noPadding ? '' : 'card-padding', 'card']">
+    <!-- {{ noPadding }} -->
     <slot></slot>
   </div>
 </template>
 
 <script>
-export default {};
+export default {
+  props: {
+    noPadding: Boolean,
+  },
+};
 </script>
 
 <style lang="scss">
 .card {
   background: #fff;
   border-radius: 15px;
-  padding: 1rem;
   margin-bottom: 2rem;
+}
+.card-padding {
+  padding: 1rem;
 }
 </style>
