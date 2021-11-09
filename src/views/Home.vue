@@ -1,12 +1,22 @@
 <template>
+  <Navigation
+    @toggle-nav="toggleNav"
+    title="Purpose"
+    :navLinks="navLinks"
+    :isOpen="navOpen"
+    isLoggedIn
+  />
   <section>
-    <h2 class="greeting">Greeting</h2>
+    <Greeting icon="images/icon-wave.png" name="Kai" />
   </section>
   <section>
     <h2>Accounts</h2>
-    <Card>
-      <p>Carousel</p>
-    </Card>
+    <Accounts
+      name="Advance Virtual Card"
+      percentage="50"
+      total="982.56"
+      cardNum="****5591"
+    />
   </section>
   <section class="progress-credit">
     <Progress
@@ -94,23 +104,44 @@ enroll in text to borrow"
 </template>
 
 <script>
-import Card from "@/components/Card.vue";
 import IconLink from "@/components/IconLink.vue";
 import Product from "@/components/Product.vue";
 import Article from "@/components/Article.vue";
 import Promotion from "@/components/Promotion.vue";
 import Progress from "@/components/Progress.vue";
 import CreditHub from "@/components/CreditHub.vue";
+import Accounts from "@/components/Accounts.vue";
+import Greeting from "@/components/Greeting.vue";
+import Navigation from "@/components/Navigation.vue";
+
 export default {
-  // name: "Home",
+  name: "Home",
   components: {
-    Card,
     IconLink,
     Product,
     Article,
     Promotion,
     Progress,
     CreditHub,
+    Accounts,
+    Greeting,
+    Navigation,
+  },
+  data() {
+    return {
+      navLinks: [
+        { name: "Purpose Progress", id: "001" },
+        { name: "Credit Hub", id: "002" },
+        { name: "Products", id: "003" },
+        { name: "Customer Info", id: "004" },
+      ],
+      navOpen: false,
+    };
+  },
+  methods: {
+    toggleNav() {
+      this.navOpen = !this.navOpen;
+    },
   },
 };
 </script>

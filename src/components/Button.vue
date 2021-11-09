@@ -1,5 +1,19 @@
 <template>
   <router-link
+    v-if="isIcon"
+    class="btn"
+    :class="{
+      'btn-primary': primary,
+      'btn-secondary': secondary,
+      'btn-link': linkStyle,
+      'btn-space': spaceBetween,
+    }"
+    :to="[link]"
+  >
+    <img :src="[icon]" />
+  </router-link>
+  <router-link
+    v-else
     class="btn"
     :class="{
       'btn-primary': primary,
