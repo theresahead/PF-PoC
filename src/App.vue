@@ -1,7 +1,7 @@
 <template>
-  <Card>
+  <!-- <Card>
     <Header />
-  </Card>
+  </Card> -->
   <!-- <div id="nav">
     <router-link to="/">Home</router-link> |
     <router-link to="/about">About</router-link>
@@ -10,13 +10,13 @@
 </template>
 
 <script>
-import Header from "@/components/Header.vue";
-import Card from "@/components/Card.vue";
+// import Header from "@/components/Header.vue";
+// import Card from "@/components/Card.vue";
 export default {
   // name: "Home",
   components: {
-    Header,
-    Card,
+    // Header,
+    // Card,
   },
 };
 </script>

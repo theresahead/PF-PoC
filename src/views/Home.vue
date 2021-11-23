@@ -98,9 +98,9 @@ enroll in text to borrow"
       imgPath="images/icon-hand.svg"
     />
   </section>
-  <section>
+  <!-- <section>
     <h2>chat bot</h2>
-  </section>
+  </section> -->
 </template>
 
 <script>
