@@ -9,9 +9,11 @@ export default {
   name: "Accounts",
   setup() {
     // mounted
-    console.log("setup initiated");
-    let sw = navigator.serviceWorker.register("../sw.js");
-    console.log(sw);
+    async () => {
+      console.log("setup initiated");
+      let sw = await navigator.serviceWorker.register("src/sw.js");
+      console.log(sw);
+    };
   },
   methods: {
     async subscribe() {
