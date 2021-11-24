@@ -5,15 +5,16 @@
 </template>
 
 <script>
+import { onMounted } from "@vue/runtime-core";
 export default {
   name: "Accounts",
   setup() {
     // mounted
-    async () => {
+    onMounted(async () => {
       console.log("setup initiated");
       let sw = await navigator.serviceWorker.register("src/sw.js");
       console.log(sw);
-    };
+    });
   },
   methods: {
     async subscribe() {
