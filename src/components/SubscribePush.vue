@@ -23,7 +23,7 @@ export default {
       let push = await sw.pushManager.subscribe({
         userVisibleOnly: true,
         applicationServerKey:
-          "BIx7cqPyH_T-nn1Xh7IwbilnMtIVeNUJfvRQX-LYlT1R9Sd-5L8oklmgbG4vIuvW0bQwtGQT5tfPJT3l3KjEs2w",
+          "BLcuWb1dUakQj2fU1NGkVN3EblwjNuImz-iRogjrQxiyYC6sWlsS4AgMY2LcYQviHfHj0_EPUTMv05G3ZClZS2E",
       });
       console.log(JSON.stringify(push));
     },
