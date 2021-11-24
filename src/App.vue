@@ -6,15 +6,19 @@
     <router-link to="/">Home</router-link> |
     <router-link to="/about">About</router-link>
   </div> -->
+
   <router-view />
+  <SubscribePush />
 </template>
 
 <script>
+import SubscribePush from "./components/SubscribePush";
 // import Header from "@/components/Header.vue";
 // import Card from "@/components/Card.vue";
 export default {
-  // name: "Home",
+  name: "Home",
   components: {
+    SubscribePush,
     // Header,
     // Card,
   },
