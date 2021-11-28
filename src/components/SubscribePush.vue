@@ -12,7 +12,7 @@ export default {
     // mounted
     onMounted(async () => {
       console.log("setup initiated");
-      let sw = await navigator.serviceWorker.register("src/sw.js");
+      let sw = await navigator.serviceWorker.register("../sw.js");
       console.log(sw);
     });
   },
@@ -20,11 +20,13 @@ export default {
     async subscribe() {
       console.log("subscribe()");
       let sw = await navigator.serviceWorker.ready;
+      console.log(sw);
       let push = await sw.pushManager.subscribe({
         userVisibleOnly: true,
         applicationServerKey:
           "BLcuWb1dUakQj2fU1NGkVN3EblwjNuImz-iRogjrQxiyYC6sWlsS4AgMY2LcYQviHfHj0_EPUTMv05G3ZClZS2E",
       });
+      console.log(push);
       console.log(JSON.stringify(push));
     },
   },
